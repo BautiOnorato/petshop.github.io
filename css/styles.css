@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+ }
+
+.primer-header {
+    display: flex;
+    background-color: #222222;
+    color: #F3F3F3;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.primer-header p {
+    margin-left: 100px;
+}
+
+.primer-header div span{
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.segundo-header {
+    background-color: #F0A83E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.segundo-header img {
+    margin: 20px 50px;
+    width: 15vw;
+}
+
+.segundo-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 8vh;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.segundo-header nav ul li a {
+    padding: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF; 
+}
+
+.segundo-header nav i.fa-bars {
+    display: none;
+}
+
+/* Fin del header */
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: 50vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner div {
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
+}
+
+.banner div .parrafo-1-banner {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: #3C2313;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.banner div .parrafo-2-banner {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #3C2313;
+}
+
+.banner div a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #F0A83E;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.productos {
+    background-color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.productos .articulos-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productos .articulos-arriba img {
+    width: 4vw;
+    margin-bottom: 20px;
+}
+
+.productos .articulos-arriba h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 2.875rem;
+    font-weight: 700;
+    color: #3C2313;
+    margin-bottom: 16px;
+}
+
+.productos .articulos-arriba ul {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    list-style-type: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.productos .articulos-arriba ul li span{
+    color: #666666;
+}
+
+.productos .articulos-arriba ul li a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.productos .articulos-arriba ul li a:hover {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.productos .articulos {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.productos .articulos article {
+    margin: 20px;
+    text-align: center;
+    background-color: #FBFAF6;
+}
+
+.productos .articulos article:hover {
+    background-color: #F0A83E;
+    cursor: pointer;
+}
+
+.productos .articulos article:hover p {
+    color: #FFFFFF;
+}
+
+.productos .articulos article h4 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding-bottom: 7px;
+    color: #3C2313;
+}
+
+.productos .articulos article p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #F0A83E;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    margin-bottom: 35px;
+}
+
+.contacto .formulario h3 {  
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.contacto .formulario input {
+    background-color: #3C2313;
+    width: 30vw;
+    padding: 20px 14px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.contacto .formulario input::placeholder {
+    color: #ffffff;
+    opacity: .8;
+    border: #3C2313;
+}
+
+.contacto .submit-reset button:nth-child(1) {
+    background-color: #8A8787;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 38px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contacto .submit-reset button:nth-child(2) {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Fin del main */
+
+footer .correo {
+    display: flex;
+    background-color: #F0A83E;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+footer .correo .correo-izq {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .correo .correo-izq img {
+    width: 5vw;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer .correo .correo-izq p {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+footer .correo .correo-der {
+    margin-right: 50px;
+}
+
+footer .correo .correo-der input[type=email] {
+    width: 26vw;
+    padding: 16px 14px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #A0A0A0;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: none;
+}
+
+footer .correo .correo-der button[type=submit] {
+    padding: 16px 14px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #3C2313;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+footer .datos {
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .datos .datos-iconos-texto {
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    margin-left: 50px;
+}
+
+footer .datos .datos-iconos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+footer .datos .datos-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .datos .datos-texto p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #8A8787;
+}
+
+footer .datos .datos-texto span {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+footer .datos .datos-logo img{
+    margin-right: 70px;
+    width: 16vw;
+}
+
+footer {
+    background-color: #F0A83E;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .redes div {
+    padding: 10px;
+}
+
+footer .redes a {
+    margin: 0 50px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+footer .redes a:hover {
+    filter: drop-shadow(5px 5px 2px #000000);
+}
+
+footer .redes p {
+    background-color: #222222;
+    padding: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+}   
+
+@media (min-width: 0) and (max-width: 480px) {
+    :root {
+        font-size: 9px;
+    }
+
+    .primer-header {
+        display: none;
+    }
+
+    .segundo-header img {
+        margin: 20px 30px;
+        width: 40vw;
+    }
+
+    .segundo-header ul li{
+        display: none;
+    }
+
+    .segundo-header nav {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+    }
+
+    .segundo-header nav i.fa-bars {
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #ffffff; 
+        cursor: pointer;
+    }
+
+    .banner {
+        background-position-x: 5%;
+    }
+    
+    .banner div {
+        margin-right: 25px;
+        align-items: flex-end;
+    }
+
+    .banner div .parrafo-1-banner {
+        width: 80vw;
+    }
+    
+    .productos .articulos-arriba img {
+        width: 16vw;
+        margin-bottom: 16px;
+    }
+    
+    .productos .articulos-arriba h2 {
+        text-align: center;
+        font-size: 3.7rem;
+        margin-bottom: 20px;
+    }
+    
+    .productos .articulos-arriba ul {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+ 
+    .productos .articulos {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        min-width: 50vw;
+    }
+    
+    .productos .articulos img{
+        width: 80vw;
+    }
+
+    .productos .articulos article h4 {
+        font-size: 1.5rem;
+    }
+    
+    .productos .articulos article p {
+        font-size: 1.2rem;
+    }
+    
+    .contacto {
+        margin-bottom: 20px;
+    }
+
+    .contacto .formulario {
+        margin-bottom: 10px;
+    }
+
+    .contacto .formulario h3 {  
+        font-size: 2.2rem;
+    }
+    
+    .contacto .formulario input {
+        width: 70vw;
+        padding: 15px 14px;
+        font-size: 1rem;
+    }
+    
+    .contacto .submit-reset button:nth-child(1) {
+        font-size: 1.5rem;
+        padding: 10px 25px;
+    }
+    
+    .contacto .submit-reset button:nth-child(2) {
+        font-size: 1.5rem;
+        padding: 10px 35px;
+    }
+
+    footer .correo {
+        flex-direction: column;
+        height: 10vh;
+    }
+    
+    
+    footer .correo .correo-izq img {
+        width: 10vw;
+        margin: 5px 25px 5px 10px;
+    }
+
+    footer .correo .correo-izq p {
+        font-size: 1.4rem;
+    }
+    
+    footer .correo .correo-der {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    footer .correo .correo-der input[type=email] {
+        width: 60vw;
+        padding: 12px 10px;
+        font-size: 1rem;
+        margin-left: 80px;
+        margin-right: 0;
+    }
+
+    footer .correo .correo-der button[type=submit] {
+        padding: 10px 0px;
+        font-size: 1rem;
+        margin-right: 30px;
+        width: 25vw;
+    }
+    
+    footer .datos {
+        flex-direction: column-reverse;
+    }
+    
+    footer .datos .datos-iconos-texto {
+        justify-content: flex-start;
+        width: 80vw;
+        margin-left: 20px;
+    }
+    
+    footer .datos .datos-iconos {
+        margin-right: 10px;
+    }
+    
+    footer .datos .datos-texto span {
+        font-size: 2rem;
+    }
+    
+    footer .datos .datos-logo img{
+        margin: 20px 0 0;
+        width: 60vw;
+    }
+    
+    footer .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    footer .redes a {
+        margin: 0 10px;
+        font-size: 3rem;
+    }
+    
+    footer .redes a:hover {
+        filter: drop-shadow(5px 5px 2px #000000);
+    }
+    
+    footer .redes p {
+        font-size: 1rem;
+    }  
+}
+
+@media (min-width: 481px) and (max-width: 877px) {
+    .primer-header p {
+        margin-left: 20px;
+    }
+
+    .segundo-header {
+        background-color: #F0A83E;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+    }
+    
+    .segundo-header img {
+        margin: 20px 20px;
+        width: 15vw;
+    }
+
+    .segundo-header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        height: 8vh;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    .segundo-header nav ul li a {
+        font-size: 1rem;
+    }
+
+    .productos .articulos-arriba ul {
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    .contacto {
+        margin-bottom: 50px;
+    }
+
+    .contacto .formulario {
+        margin-bottom: 20px;
+    }
+
+    .contacto .formulario h3 {  
+        font-size: 2.2rem;
+    }
+    
+    .contacto .formulario input {
+        width: 70vw;
+        padding: 15px 14px;
+        font-size: 1rem;
+    }
+
+    footer .correo {
+        height: 12vh;
+        width: 100vw;
+    }
+    
+    footer .correo .correo-izq {
+        width: 80vw;
+    }
+    
+    footer .correo .correo-izq img {
+        width: 8vw;
+        margin: 5px 25px 5px 10px;
+    }
+
+    footer .correo .correo-izq p {
+        font-size: 0.9rem;
+    }
+    
+    footer .correo .correo-der {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    footer .correo .correo-der input[type=email] {
+        width: 30vw;
+        padding: 12px 10px;
+        font-size: 0.7rem;
+        margin-left: 80px;
+        margin-right: 0;
+    }
+
+    footer .correo .correo-der button[type=submit] {
+        padding: 6px 0px;
+        font-size: 0.7rem;
+        margin-right: 30px;
+        width: 10vw;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1100px) {
+    .contacto .formulario input {
+        width: 70vw;
+        padding: 15px 14px;
+        font-size: 1rem;
+    }   
+}
+
+@media (min-width: 479px) and (max-width: 685px) {
+    .primer-header {
+        display: none;
+    }
+    
+    .segundo-header img {
+        margin: 20px 30px;
+        width: 40vw;
+    }
+    
+    .segundo-header ul li{
+        display: none;
+    }
+
+    .segundo-header nav {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+    }
+
+    .segundo-header nav i.fa-bars {
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #ffffff; 
+        cursor: pointer;
+    }  
+}
